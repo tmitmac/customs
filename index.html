@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Square Country Customs & Border Protection</title>
+  <meta name="description" content="Square Country Customs & Border Protection — keeping our borders safe, facilitating legitimate travel and trade." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small visual polish beyond Tailwind */
+    .hero-bg { background-image: linear-gradient(90deg, rgba(6,95,70,0.9), rgba(2,48,71,0.9)), url('https://images.unsplash.com/photo-1505765050942-0f07a0d2f7b0?auto=format&fit=crop&w=1600&q=60'); background-size: cover; background-position: center; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased leading-relaxed">
+  <!-- Top emergency / information banner -->
+  <div class="bg-yellow-400 text-slate-900 text-sm p-2 text-center">
+    <strong>Notice:</strong> Border travel requirements have changed — check <a href="#travel" class="underline font-semibold">travel advice</a> before you travel.
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-4">
+          <img src="/static/square-country-logo.png" alt="Square Country crest" class="h-10 w-10 rounded-md object-cover shadow"/>
+          <div>
+            <a href="#" class="text-lg font-semibold">Square Country Customs & Border Protection</a>
+            <div class="text-xs text-slate-500">Protecting borders • Facilitating trade • Supporting travellers</div>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#travel" class="hover:underline">Travel</a>
+          <a href="#goods" class="hover:underline">Bringing goods</a>
+          <a href="#trade" class="hover:underline">Trade & business</a>
+          <a href="#news" class="hover:underline">News</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <input aria-label="Search" class="border rounded-md py-1 px-2 text-sm" placeholder="Search the site" />
+          <a href="#report" class="bg-sky-600 text-white px-3 py-1 rounded-md text-sm shadow">Report a concern</a>
+        </div>
+
+        <!-- mobile menu button -->
+        <div class="md:hidden">
+          <button id="menuBtn" aria-expanded="false" class="p-2 rounded-md focus:ring">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile nav -->
+    <div id="mobileNav" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="#travel">Travel</a>
+        <a href="#goods">Bringing goods</a>
+        <a href="#trade">Trade & business</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero-bg text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Square Country Customs & Border Protection</h1>
+          <p class="mt-4 text-lg text-slate-100/90">We keep Square Country safe by protecting our borders, facilitating legitimate trade, and supporting travellers. Get official information about travel, importing goods, and compliance.</p>
+
+          <div class="mt-6 flex gap-3">
+            <a href="#travel" class="bg-white text-slate-900 px-4 py-2 rounded-md font-semibold shadow">Travel guidance</a>
+            <a href="#goods" class="border border-white px-4 py-2 rounded-md">Bringing goods</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick links -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <a href="to-and-from.html" class="bg-white p-4 rounded-lg shadow flex items-start gap-3">
+          <div class="p-3 bg-sky-50 rounded-md">✈️</div>
+          <div>
+            <div class="font-semibold">Travelling to & Leaving Square Country</div>
+            <div class="text-sm text-slate-500">Passports, screening and arrivals process</div>
+          </div>
+        </a>
+
+        <a href="#goods" class="bg-white p-4 rounded-lg shadow flex items-start gap-3">
+          <div class="p-3 bg-sky-50 rounded-md">📦</div>
+          <div>
+            <div class="font-semibold">Bringing goods into Square Country</div>
+            <div class="text-sm text-slate-500">What you can and cannot bring, duty & tax info (no calculator)</div>
+          </div>
+        </a>
+
+        <a href="#trade" class="bg-white p-4 rounded-lg shadow flex items-start gap-3">
+          <div class="p-3 bg-sky-50 rounded-md">🏢</div>
+          <div>
+            <div class="font-semibold">Trade & business</div>
+            <div class="text-sm text-slate-500">Importer obligations, customs clearance, tariffs</div>
+          </div>
+        </a>
+
+        <a href="#security" class="bg-white p-4 rounded-lg shadow flex items-start gap-3">
+          <div class="p-3 bg-sky-50 rounded-md">🛂</div>
+          <div>
+            <div class="font-semibold">Border security</div>
+            <div class="text-sm text-slate-500">Biosecurity, prohibited items, border enforcement</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Content: Travel guidance and Bringing goods -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+        <article id="travel" class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-semibold">Travel guidance</h2>
+          <p class="mt-2 text-slate-600">Information for travellers arriving and departing Square Country, including passport checks, arrivals cards, and declared items.</p>
+
+          <h3 class="mt-4 font-semibold">Arrivals & forms</h3>
+          <ul class="list-disc pl-5 text-slate-600">
+            <li>Complete your arrival declaration honestly — false declarations are an offence.</li>
+            <li>Have your travel documents ready for inspection.</li>
+            <li>Special rules apply for restricted and prohibited items (weapons, endangered wildlife, certain foods).</li>
+          </ul>
+
+          <h3 class="mt-4 font-semibold">Travelling with medication</h3>
+          <p class="text-slate-600">Bring a copy of your prescription and ensure medication is in original packaging. Contact us if you’re unsure.</p>
+        </article>
+
+        <article id="goods" class="bg-white p-6 mt-6 rounded-lg shadow">
+          <h2 class="text-2xl font-semibold">Bringing goods into Square Country</h2>
+          <p class="mt-2 text-slate-600">Guidance for personal and commercial imports. This site intentionally does <strong>not</strong> include a duty calculator — see your importer or broker for exact calculations.</p>
+
+          <h3 class="mt-4 font-semibold">Common questions</h3>
+          <dl class="mt-2">
+            <dt class="font-medium">What items are prohibited?</dt>
+            <dd class="text-slate-600 mb-3">Weapons, some food stuffs, certain plants and animal products, and items that breach intellectual property laws.</dd>
+
+            <dt class="font-medium">Do I need to declare goods bought overseas?</dt>
+            <dd class="text-slate-600 mb-3">Yes — declare all goods over the duty-free allowance and any restricted items.</dd>
+          </dl>
+
+          <h3 class="mt-4 font-semibold">Importing commercially</h3>
+          <p class="text-slate-600">Businesses must lodge import documentation, ensure correct tariff classification, and meet biosecurity requirements.</p>
+        </article>
+      </div>
+
+      <aside class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-semibold">Popular services</h3>
+        <ul class="mt-3 space-y-2 text-sm text-slate-600">
+          <li><a href="#" class="underline">Create an import declaration</a></li>
+          <li><a href="#" class="underline">Find a customs office</a></li>
+          <li><a href="#" class="underline">Report suspicious goods</a></li>
+          <li><a href="#report" class="underline font-semibold">Make a report</a></li>
+        </ul>
+
+        <div class="mt-6 border-t pt-4">
+          <h4 class="font-semibold">Contact centre</h4>
+          <p class="text-sm text-slate-600">Open Mon–Fri 8:30–5:00</p>
+          <p class="mt-2 text-sm"><strong>Phone:</strong> +64 4 123 4567<br/><strong>General enquiries:</strong> info@customs.gov.sc</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- News / updates -->
+    <section id="news" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <h2 class="text-2xl font-semibold">Latest news & alerts</h2>
+      <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <article class="bg-white p-4 rounded-lg shadow">
+          <h3 class="font-semibold">Increased screening at southern ports</h3>
+          <p class="text-sm text-slate-600 mt-2">From 15 Dec: enhanced checks on goods from high-risk regions. Read more about what to expect.</p>
+          <a href="#" class="text-sm underline mt-2 inline-block">Read notice</a>
+        </article>
+
+        <article class="bg-white p-4 rounded-lg shadow">
+          <h3 class="font-semibold">Travel documents reminder</h3>
+          <p class="text-sm text-slate-600 mt-2">Make sure passports are valid for the duration of your trip. Find passport advice and forms.</p>
+          <a href="#" class="text-sm underline mt-2 inline-block">Find out more</a>
+        </article>
+
+        <article class="bg-white p-4 rounded-lg shadow">
+          <h3 class="font-semibold">Trade facilitation pilot</h3>
+          <p class="text-sm text-slate-600 mt-2">A pilot project to speed clearance for low-risk consignments will run in early 2026.</p>
+          <a href="#" class="text-sm underline mt-2 inline-block">Pilot details</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reports and forms -->
+    <section id="report" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold">Report a concern or declare goods</h2>
+        <p class="text-slate-600">Use the form below to contact our enquiries team. For urgent matters such as prohibited goods in transit, call the contact centre.</p>
+
+        <form class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="name" placeholder="Your name" class="border rounded-md p-2" />
+          <input type="email" name="email" placeholder="Your email" class="border rounded-md p-2" />
+          <input type="text" name="subject" placeholder="Subject" class="border rounded-md p-2 md:col-span-2" />
+          <textarea name="message" rows="5" placeholder="Message" class="border rounded-md p-2 md:col-span-2"></textarea>
+          <div class="md:col-span-2 flex items-center gap-3">
+            <button type="submit" class="bg-sky-700 text-white px-4 py-2 rounded-md">Send message</button>
+            <button type="reset" class="px-3 py-1 border rounded-md">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact and footer -->
+    <footer id="contact" class="mt-12 bg-slate-800 text-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <img src="/static/square-country-logo-white.png" alt="Square Country logo" class="h-10 mb-3" />
+          <p class="text-sm">Square Country Customs & Border Protection — Address: 123 Harbour Street, Capital City</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold">Quick links</h4>
+          <ul class="mt-3 text-sm space-y-1">
+            <li><a href="#" class="underline">Customs offices</a></li>
+            <li><a href="#" class="underline">Import rules</a></li>
+            <li><a href="#" class="underline">Forms & guides</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold">Subscribe</h4>
+          <p class="text-sm mt-2">Get email updates on border news and notices.</p>
+          <form class="mt-3 flex gap-2">
+            <input type="email" placeholder="Email address" class="rounded-md p-2 text-sm" />
+            <button class="bg-emerald-500 text-white px-3 py-2 rounded-md text-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-700 py-4 text-center text-sm">&copy; Square Country Customs & Border Protection — All rights reserved</div>
+    </footer>
+  </main>
+
+  <script>
+    // small JS for mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn && menuBtn.addEventListener('click', () => {
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!expanded));
+      mobileNav.classList.toggle('hidden');
+    });
+
+    // basic form handler (placeholder only)
+    document.querySelectorAll('form').forEach(f => f.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('This demo form does not send data. Replace with your backend endpoint.');
+    }));
+  </script>
+</body>
+</html>
